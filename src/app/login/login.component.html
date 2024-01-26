@@ -1,0 +1,20 @@
+<!-- login.component.html -->
+<div class="login-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login(1)" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" required>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <br>
+      <button type="submit" [disabled]="!loginForm.valid">Login</button>
+    </form>
+  </div>
+  <!-- <app-home></app-home> -->
+  
+  

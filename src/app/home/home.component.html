@@ -1,0 +1,23 @@
+<!-- user-details.component.html -->
+<div class="user-details-container">
+    <h2>Device Name</h2>
+    <form>
+      <div class="form-group">
+        <label for="partName">Part Name:</label>
+        <input type="text" id="partName" name="partName" [(ngModel)]="userData.partName" disabled>
+      </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="number" id="location" name="location" [(ngModel)]="userData.location" disabled>
+      </div>
+      <div class="form-group">
+        <label for="passCount">Pass Count:</label>
+        <input type="number" id="passCount" name="passCount" [(ngModel)]="userData.passCount" disabled>
+      </div>
+      <div class="form-group">
+        <label for="failCount">Fail count:</label>
+        <input type="number" id="failCount" name="failCount" [(ngModel)]="userData.failCount" disabled>
+      </div>
+    </form>
+  </div>
+  
