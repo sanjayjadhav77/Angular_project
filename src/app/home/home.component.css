@@ -1,8 +1,8 @@
 /* user-details.component.css */
 .user-details-container {
-    max-width: 200px;
+    max-width: 400px;
     margin :auto;
-    padding: 5px;
+    padding: 20px;
     border: 1px solid #3498db;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -53,4 +53,26 @@
     background-color: #95a5a6;
     cursor: not-allowed;
   }
+
+  .get-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ecf0f1;
+    margin-top: 50px; /* Add a top margin for spacing */
+
+
+  button {
+    background-color: #2e8fcc;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+  }
+}
   
