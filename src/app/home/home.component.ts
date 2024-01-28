@@ -29,7 +29,8 @@ export class HomeComponent implements OnInit {
   getData() {
     console.log("get method call..")
     this.myHttpService.getData().subscribe(response => {
-      console.log(response);
+      console.log(response.msg);
+      console.log(response.status);
       // Handle the response here
     });
   }

@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MyHttpService {
-  private apiUrl = 'https://astute-azimuth-386116-default-rtdb.asia-southeast1.firebasedatabase.app/posts.json';  // Replace with your API endpoint
-
+  // private apiUrl = 'https://astute-azimuth-386116-default-rtdb.asia-southeast1.firebasedatabase.app/posts.json';  // Replace with your API endpoint
+  private apiUrl = 'http://127.0.0.1:5000';  // Replace with your API endpoint
   constructor(private http: HttpClient) { }
 
   // GET request example
@@ -19,6 +19,6 @@ export class MyHttpService {
 
   // POST request example
   postData(data: any): Observable<any> {
-    return this.http.post<any>(`${this.apiUrl}`, data);
+    return this.http.post<any>(`${this.apiUrl}/login`, data);
   }
 }
